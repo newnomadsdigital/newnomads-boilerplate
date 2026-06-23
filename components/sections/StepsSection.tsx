@@ -8,7 +8,10 @@ const steps = [
 
 export function StepsSection() {
   return (
-    <section className="flex w-full flex-col items-center overflow-clip bg-surface px-6 py-20 sm:px-10 lg:px-16 lg:py-28">
+    <section
+      id="steps"
+      className="flex w-full scroll-mt-24 flex-col items-center overflow-clip bg-surface px-6 py-20 sm:px-10 lg:px-16 lg:py-28"
+    >
       <div className="flex w-full max-w-[1280px] flex-col items-start gap-12 lg:flex-row lg:gap-20">
         <div className="flex flex-1 flex-col gap-4 text-ink">
           <p className="text-[16px] font-semibold leading-[1.5]">Энгийн. Гэхдээ үр дүнтэй.</p>

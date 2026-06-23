@@ -1,0 +1,94 @@
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - navigation [ref=e4]:
+      - img "Өөрөөр ажиллая" [ref=e5]
+      - generic [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Нүүр" [ref=e9] [cursor=pointer]:
+              - /url: "#hero"
+          - listitem [ref=e10]:
+            - link "Хуучин дүрэм" [ref=e11] [cursor=pointer]:
+              - /url: "#steps"
+          - listitem [ref=e12]:
+            - link "Гарах өөрчлөлт" [ref=e13] [cursor=pointer]:
+              - /url: "#footer"
+        - button "Ном захиалах" [ref=e15] [cursor=pointer]
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "ӨӨРӨӨР АЖИЛЛАЯ" [level=1] [ref=e20]
+          - paragraph [ref=e21]:
+            - text: Амьдралаа золиослолгүйгээр амжилтад хүрэх арга.
+            - text: Дэлхийн бестселлер — «Өөрөөр ажиллая» (Rework).
+        - generic [ref=e22]:
+          - button "Одоо захиалах" [ref=e24] [cursor=pointer]
+          - button "Номын хэсгээс" [ref=e26] [cursor=pointer]
+      - img "«Өөрөөр ажиллая» номыг гарт барьж буй зураг" [ref=e29]
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - paragraph [ref=e33]: Энгийн. Гэхдээ үр дүнтэй.
+        - heading "Өөрөөр бас ухаалгаар эхлэх 3 алхам" [level=2] [ref=e34]
+      - list [ref=e35]:
+        - listitem [ref=e36]:
+          - img [ref=e38]
+          - generic [ref=e42]:
+            - heading "Номоо ав." [level=3] [ref=e43]
+            - paragraph [ref=e44]: Эхний ухаалаг шийдвэрээ гарга.
+        - listitem [ref=e45]:
+          - img [ref=e47]
+          - generic [ref=e51]:
+            - heading "Хуучин дүрмээ хая." [level=3] [ref=e52]
+            - paragraph [ref=e53]: Үр дүнгүй зуршлаасаа зоригтой татгалз.
+        - listitem [ref=e54]:
+          - img [ref=e56]
+          - generic [ref=e59]:
+            - heading "Өөрөөр ажилла." [level=3] [ref=e60]
+            - paragraph [ref=e61]: Өөрөөр ажиллаж, илүүг бүтээ.
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - img "Өөрөөр ажиллая" [ref=e66]
+          - generic [ref=e67]:
+            - generic [ref=e68]:
+              - paragraph [ref=e69]: Байршил
+              - paragraph [ref=e70]: Rokmon building, 3rd floor, Ulaanbaatar, Mongolia, 16050
+            - generic [ref=e71]:
+              - paragraph [ref=e72]: Утасны дугаар
+              - link "+976 88062224" [ref=e73] [cursor=pointer]:
+                - /url: tel:+97688062224
+          - generic [ref=e74]:
+            - link "Facebook" [ref=e75] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e76]
+            - link "Instagram" [ref=e78] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e79]
+            - link "Youtube" [ref=e82] [cursor=pointer]:
+              - /url: "#"
+              - img [ref=e83]
+        - generic [ref=e86]:
+          - link "Link One" [ref=e88] [cursor=pointer]:
+            - /url: "#"
+          - generic [ref=e89]:
+            - paragraph [ref=e90]:
+              - text: Даваа - Баасан
+              - text: 9:30 AM - 17:30 PM
+            - paragraph [ref=e91]:
+              - text: Ням
+              - text: 10:30 AM - 13:00 PM
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - paragraph [ref=e94]: ӨӨРӨӨР АЖИЛЛАЯ
+          - paragraph: ӨӨРӨӨР АЖИЛЛАЯ
+        - generic [ref=e97]:
+          - paragraph [ref=e98]: © 2026 Dino Clinic. Бүх эрх хуулиар хамгаалагдсан.
+          - generic [ref=e99]:
+            - link "Privacy policy" [ref=e100] [cursor=pointer]:
+              - /url: "#"
+            - link "Terms of service" [ref=e101] [cursor=pointer]:
+              - /url: "#"
+            - link "Cookie settings" [ref=e102] [cursor=pointer]:
+              - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e108] [cursor=pointer]:
+    - img [ref=e109]

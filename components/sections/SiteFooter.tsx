@@ -1,6 +1,18 @@
+"use client";
+
 import { Facebook, Instagram, Youtube } from "lucide-react";
+import type { MouseEvent } from "react";
 
 import { Logo } from "@/components/ui/logo";
+
+const SPOTLIGHT_HEADLINE_CLASS =
+  "text-center text-5xl font-bold leading-[1.2] tracking-[-2px] sm:text-7xl lg:text-[134px] lg:tracking-[-5.36px]";
+
+function handleSpotlightMove(event: MouseEvent<HTMLDivElement>) {
+  const rect = event.currentTarget.getBoundingClientRect();
+  event.currentTarget.style.setProperty("--spotlight-x", `${event.clientX - rect.left}px`);
+  event.currentTarget.style.setProperty("--spotlight-y", `${event.clientY - rect.top}px`);
+}
 
 const socials = [
   { label: "Facebook", icon: Facebook },
@@ -12,7 +24,10 @@ const footerLinks = ["Privacy policy", "Terms of service", "Cookie settings"];
 
 export function SiteFooter() {
   return (
-    <footer className="flex w-full flex-col items-center overflow-clip bg-paper px-6 py-20 text-ink sm:px-10 lg:px-16">
+    <footer
+      id="footer"
+      className="flex w-full scroll-mt-24 flex-col items-center overflow-clip bg-paper px-6 py-20 text-ink sm:px-10 lg:px-16"
+    >
       <div className="flex w-full max-w-[1280px] flex-col gap-16">
         <div className="flex flex-col gap-16 md:flex-row">
           <div className="flex flex-1 flex-col gap-8">
@@ -60,9 +75,21 @@ export function SiteFooter() {
         </div>
 
         <div className="flex flex-col gap-12">
-          <p className="text-center text-5xl font-bold leading-[1.2] tracking-[-2px] sm:text-7xl lg:text-[134px] lg:tracking-[-5.36px]">
-            ӨӨРӨӨР АЖИЛЛАЯ
-          </p>
+          <div className="group relative isolate" onMouseMove={handleSpotlightMove}>
+            <p className={SPOTLIGHT_HEADLINE_CLASS}>ӨӨРӨӨР АЖИЛЛАЯ</p>
+            <p
+              aria-hidden
+              className={`pointer-events-none absolute inset-0 ${SPOTLIGHT_HEADLINE_CLASS} text-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100`}
+              style={{
+                backgroundImage:
+                  "radial-gradient(220px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), hsl(var(--secondary)) 0%, hsl(var(--primary)) 60%, transparent 80%)",
+                backgroundClip: "text",
+                WebkitBackgroundClip: "text",
+              }}
+            >
+              ӨӨРӨӨР АЖИЛЛАЯ
+            </p>
+          </div>
           <div className="flex flex-col gap-8">
             <div className="h-px w-full bg-[var(--ink-15)]" />
             <div className="flex flex-col gap-4 text-[14px] leading-[1.5] sm:flex-row sm:items-start sm:justify-between">
