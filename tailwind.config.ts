@@ -26,6 +26,12 @@ const config: Config = {
         },
         border: "hsl(var(--border))",
         ring: "hsl(var(--ring))",
+        ink: {
+          DEFAULT: "var(--ink)",
+          soft: "var(--ink-soft)",
+        },
+        paper: "var(--paper)",
+        surface: "var(--surface)",
       },
       borderRadius: {
         xs: "var(--radius-xs)",
