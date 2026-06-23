@@ -37,17 +37,14 @@ body {
   @apply min-h-full;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
+}
+
 body {
-  @apply bg-background text-foreground antialiased;
+  @apply bg-white text-luna-ink antialiased;
   font-family: var(--font-sans);
-  background-attachment: fixed;
-  background-image: radial-gradient(
-      62rem 38rem at 10% -8%,
-      hsl(var(--secondary) / 0.28),
-      transparent 55%
-    ),
-    radial-gradient(54rem 36rem at 96% 8%, hsl(var(--primary) / 0.26), transparent 56%),
-    linear-gradient(180deg, hsl(38 42% 97%) 0%, hsl(202 47% 96%) 100%);
 }
 
 .container-px {
@@ -64,4 +61,19 @@ body {
 
 .surface-card-strong {
   @apply rounded-xl border border-border/80 bg-white/90 shadow-soft backdrop-blur-md;
+}
+
+/* Luna layout helpers */
+.luna-section {
+  @apply px-6 py-20 sm:px-10 lg:px-16 lg:py-28;
+}
+
+.luna-container {
+  @apply mx-auto w-full max-w-container;
+}
+
+/* Relume-style image placeholder */
+.luna-placeholder {
+  background-color: #e9eaea;
+  background-image: linear-gradient(135deg, rgba(2, 8, 8, 0.06) 0%, rgba(2, 8, 8, 0.02) 100%);
 }
